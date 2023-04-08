@@ -99,3 +99,11 @@ if (bmiMark > bmiJohn) {
 } else {
   console.log(`John's BMI (${bmiJohn}) is higher than Mark's!`);
 }
+
+//Type Conversion and Coercion
+//Coercion + converts into string, - converts into number
+console.log("9" - "5"); //4
+console.log("19" - "13" + "17"); //617
+console.log("19" - "13" + 17); //23
+console.log("123" > 57);
+console.log(5 + 6 + "4" + 9 - 4 - 2);
