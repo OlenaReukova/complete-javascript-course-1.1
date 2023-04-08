@@ -76,3 +76,13 @@ console.log(bmiMark, bmiJohn, markHigherBMI);
 //Template Literals
 description = `Portugal is in Europe, and its 11 million people speak portuguese`;
 console.log(description);
+
+//Taking Decisions: if / else Statements
+let belowPopulation = 33 - population;
+if (population > 33) {
+  console.log(`UK's population is above average`);
+} else {
+  console.log(
+    `Portugal's population is ${belowPopulation} million below average`
+  );
+}
