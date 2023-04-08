@@ -72,3 +72,7 @@ console.log(bmiJohn);
 let markHigherBMI = bmiMark > bmiJohn;
 console.log(markHigherBMI);
 console.log(bmiMark, bmiJohn, markHigherBMI);
+
+//Template Literals
+description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+console.log(description);
