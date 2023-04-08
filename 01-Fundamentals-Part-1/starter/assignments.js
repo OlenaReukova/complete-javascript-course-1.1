@@ -26,6 +26,8 @@ console.log(halfPopulation);
 let increasedPopulation = population + 1;
 console.log(increasedPopulation);
 
+//or population ++;
+
 //Finland has a population of 6 million.Does your country have more people than
 //Finland?
 let populationFinland = 6;
