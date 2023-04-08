@@ -82,7 +82,5 @@ let belowPopulation = 33 - population;
 if (population > 33) {
   console.log(`UK's population is above average`);
 } else {
-  console.log(
-    `Portugal's population is ${belowPopulation} million below average`
-  );
+  console.log(`UK's population is ${belowPopulation} million below average`);
 }
