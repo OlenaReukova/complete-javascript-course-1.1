@@ -105,5 +105,18 @@ if (bmiMark > bmiJohn) {
 console.log("9" - "5"); //4
 console.log("19" - "13" + "17"); //617
 console.log("19" - "13" + 17); //23
-console.log("123" > 57);
-console.log(5 + 6 + "4" + 9 - 4 - 2);
+console.log("123" > 57); //true
+console.log(5 + 6 + "4" + 9 - 4 - 2); //1143
+
+//Equality Operators: == vs. ===
+let numNeighbours = prompt(
+  "How many neighbour countries does your country have?"
+);
+console.log(numNeighbours);
+if (Number.numNeighbours === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
