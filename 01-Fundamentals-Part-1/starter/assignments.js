@@ -76,3 +76,47 @@ console.log(bmiMark, bmiJohn, markHigherBMI);
 //Template Literals
 description = `Portugal is in Europe, and its 11 million people speak portuguese`;
 console.log(description);
+
+//Taking Decisions: if / else Statements
+let belowPopulation = 33 - population;
+if (population > 33) {
+  console.log(`UK's population is above average`);
+} else {
+  console.log(`UK's population is ${belowPopulation} million below average`);
+}
+// Coding Challenge #2
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+
+*/
+if (bmiMark > bmiJohn) {
+  console.log(`Mark's BMI (${bmiMark}) is higher than John's!`);
+} else {
+  console.log(`John's BMI (${bmiJohn}) is higher than Mark's!`);
+}
+
+//Type Conversion and Coercion
+//Coercion + converts into string, - converts into number
+console.log("9" - "5"); //4
+console.log("19" - "13" + "17"); //617
+console.log("19" - "13" + 17); //23
+console.log("123" > 57); //true
+console.log(5 + 6 + "4" + 9 - 4 - 2); //1143
+
+//Equality Operators: == vs. ===
+let numNeighbours = prompt(
+  "How many neighbour countries does your country have?"
+);
+console.log(numNeighbours);
+if (Number.numNeighbours === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
