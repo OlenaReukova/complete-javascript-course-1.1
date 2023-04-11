@@ -129,3 +129,9 @@ if (language || population <= 50 || !isIsland) {
 } else {
   console.log("Sara does not have a place to live");
 }
+
+if (country) {
+  console.log("YoushouldliveinPortugal");
+} else {
+  console.log("Portugal does not meet your criteria");
+}
