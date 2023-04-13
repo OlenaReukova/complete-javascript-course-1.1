@@ -171,3 +171,4 @@ if (everageDolphins > everageKoalas && everageDolphins >= 100) {
 } else {
   console.log("No winners! The score is less than 100 points.");
 }
+//logical operator true faulse
