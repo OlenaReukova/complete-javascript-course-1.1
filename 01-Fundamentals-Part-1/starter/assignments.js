@@ -174,6 +174,12 @@ if (everageDolphins > everageKoalas && everageDolphins >= 100) {
 //logical operator true faulse
 
 //The switch Statement
+// Useaswitchstatementtologthefollowingstringforthegiven'language': chinese or mandarin: 'MOST number of native speakers!'
+// spanish: '2nd place in number of native speakers'
+// english: '3rd place'
+// hindi: 'Number 4'
+// arabic: '5th most spoken language'
+// for all other simply log 'Great language too :D'
 
 switch (language) {
   case "chinese":
@@ -195,9 +201,38 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
-// Useaswitchstatementtologthefollowingstringforthegiven'language': chinese or mandarin: 'MOST number of native speakers!'
-// spanish: '2nd place in number of native speakers'
-// english: '3rd place'
-// hindi: 'Number 4'
-// arabic: '5th most spoken language'
-// for all other simply log 'Great language too :D'
+
+//The Conditional (Ternary) Operator
+// if else statement in one line
+//the conditional operator has 3 parts:
+//condition, if statment,else statement or other words 3 operands
+//operator is an expression (produce the value -it means we can store value in variable)
+
+//conditional(ternary) operator is much easy understand - only one line than if-else block
+const age = 18;
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+//if-else block = we need to declair first variable outside of if-else block
+
+let drink2;
+if (age >= 18) {
+  drink2 = `wine`;
+} else {
+  drink2 = `water`;
+}
+console.log(drink2);
+//advantege of ternary operator
+//we can use it inside template
+console.log(`I would like to drink ${age >= 18 ? `wine` : `water`}`);
+
+//exercise
+//If your country's population is greater than  33 million,
+//use the ternary operator to log a string like this
+//to the console: 'Portugal's population is above average'.
+//Otherwise, simply log 'Portugal's population is below average'.
+//Notice how only one word changes between these two sentences!
+
+population > 33
+  ? console.log(`Portugal's population is above average`)
+  : console.log(`Portugal's population is below average`);
