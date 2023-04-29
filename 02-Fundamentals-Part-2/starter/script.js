@@ -74,12 +74,50 @@ const percentage3 = percentageOfWorld1(900);
 console.log(percentage3);
 
 //expression
-const per = function (population) {
+const percentageOfWorld2 = function (population) {
   return (population / worldPopulation) * 100;
 };
-const percentage4 = percentageOfWorld1(1441);
+const percentage4 = percentageOfWorld2(1441);
 console.log(percentage4);
-const percentage5 = percentageOfWorld1(1200);
+const percentage5 = percentageOfWorld2(1200);
 console.log(percentage5);
-const percentage6 = percentageOfWorld1(900);
+const percentage6 = percentageOfWorld2(900);
 console.log(percentage6);
+
+//Arrow function
+const calcAge3 = (birthYeah) => 2037 - birthYeah;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+console.log(yearsUntilRetirement(1991));
+
+//more parameters
+/*
+const yearsUntilRetirement = (birthYeah, firstName) => {
+  const age = 2037 - birthYeah;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+
+*/
+
+/*
+Exercise
+1. Recreate the last assignment, but this time create an arrow function called
+   'percentageOfWorld3'
+*/
+const percentageOfWorld3 = (population) => (population / worldPopulation) * 100;
+const percentage7 = percentageOfWorld3(1441);
+console.log(percentageOfWorld3(1441));
+const percentage8 = percentageOfWorld3(1200);
+console.log(percentage8);
+const percentage9 = percentageOfWorld3(900);
+console.log(percentage9);
