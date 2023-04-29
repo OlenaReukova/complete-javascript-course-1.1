@@ -121,3 +121,34 @@ const percentage8 = percentageOfWorld3(1200);
 console.log(percentage8);
 const percentage9 = percentageOfWorld3(900);
 console.log(percentage9);
+
+//Functions Calling Other Functions
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
+
+/*
+1. Create a function called 'describePopulation'. Use the function type you like the most. 
+This function takes in two arguments: 'country' and 'population', and returns a string 
+like this: 'China has 1441 million people, which is about 18.2% of the world.'
+2. To calculate the percentage, 'describePopulation' call the 'percentageOfWorld1' you created earlier
+3. Call 'describePopulation' wit hdata for 3countries of your choice
+
+*/
+function describePopulation(country, population) {
+  const describePopulation = percentageOfWorld1(population);
+  const answer = `${country} has ${population} million people, which is about ${Math.round(
+    describePopulation
+  )} % of the world.`;
+  return answer;
+}
+console.log(describePopulation("UK", 67));
