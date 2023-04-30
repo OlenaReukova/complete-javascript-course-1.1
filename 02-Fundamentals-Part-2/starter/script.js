@@ -152,3 +152,9 @@ function describePopulation(country, population) {
   return answer;
 }
 console.log(describePopulation("UK", 67));
+
+//Coding Challenge #1
+const calcAverageDolphin = (par1,par2,par3)=>(par1+par2+par3) / 3;
+const calcAvarageKoalas = (par1, par2, par3) => (par1 + par2 + par3) / 3;
+
+function checkWinner ()
