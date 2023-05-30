@@ -159,3 +159,4 @@ const calcAvarageKoalas = (par1, par2, par3) => (par1 + par2 + par3) / 3;
 
 function checkWinner ()
 //to look for edditional information
+//continue
