@@ -157,6 +157,7 @@ console.log(describePopulation("UK", 67));
 const calcAverageDolphin = (par1,par2,par3)=>(par1+par2+par3) / 3;
 const calcAvarageKoalas = (par1, par2, par3) => (par1 + par2 + par3) / 3;
 
-function checkWinner ()
+function checkWinner ();
+console.log (calcAverageDolphin);
 //to look for edditional information
 //continue
