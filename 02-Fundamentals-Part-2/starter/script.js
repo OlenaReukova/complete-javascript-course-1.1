@@ -161,3 +161,4 @@ function checkWinner ();
 console.log (calcAverageDolphin);
 //to look for edditional information
 //continue
+//kkkk
